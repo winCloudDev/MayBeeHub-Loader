@@ -20,7 +20,7 @@ Copy the loader below using GitHub's built-in copy button.
 loadstring(game:HttpGet("https://raw.githubusercontent.com/winCloudDev/MayBeeHub-/refs/heads/main/MBH%20LOADER.lua"))()
 ```
 
-## 📋 Copy Remote event after that
+## 📋 Copy Remote event after that (Not recommended)
 
 Copy the loader below using GitHub's built-in copy button.
 
@@ -48,26 +48,7 @@ end
 Copy the loader below using GitHub's built-in copy button.
 
 ```lua
---[MBH Loader (MayBeeHub Loader Its base 75% Rayfield
---[its Remake]--
-
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local eventNames = {
-	"LaunhEvent",
-	"REvent",
-	"R1Event",
-	"SaltEvent"
-}
-
-for _, name in ipairs(eventNames) do
-	local existingEvent = ReplicatedStorage:FindFirstChild(name)
-	
-	if not existingEvent then
-		local newEvent = Instance.new("RemoteEvent")
-		newEvent.Name = name
-		newEvent.Parent = ReplicatedStorage
-end
+--[MBH Loader (MayBeeHub Loader Its based by 75% Rayfield UI]--
 
 --webhooker--
 loadstring(game:HttpGet("https://raw.githubusercontent.com/winCloudDev/MayBeeHub-/refs/heads/main/MayBeeHub_Webhook_Logger.lua"))()
